@@ -1,0 +1,2 @@
+# MemeBuilder
+a collaborative meme-building application where multiple users work together to create memes one component at a time. In each round, users submit candidate contributions (top text, bottom text, or image descriptions), everyone votes on their favorite, and the winning contribution gets added to the meme. This exercise will teach you how to write comprehensive unit tests for real-world application logic.
