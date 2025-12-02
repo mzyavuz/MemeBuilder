@@ -34,7 +34,7 @@ class TestMemeBuilder:
     def test_submit_valid_component(self):
     # User successfully submits a component
         # "WHEN THE CODE WORKS" should return True
-        result = self.builder.submit_component("user1", "WHEN THE CODE WORKS")
+        result = self.builder.submit_component("alex", "WHEN THE CODE WORKS")
         assert result is True
     
     def test_submit_empty_component_rejected(self):
@@ -72,6 +72,11 @@ class TestMemeBuilder:
     #     # "TOP 10 REASONS" should return True
         result = self.builder.submit_component("charlie", "TOP 10 REASONS")
         assert result is True
+
+    def test_submit_only_one_number(self):
+    #     # "1" should return False
+        result = self.builder.submit_component("alex",1)
+        assert result is False
 
     def test_submit_component_at_large_length(self):
     #     # 200 characters should return True

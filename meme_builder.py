@@ -9,6 +9,10 @@ class MemeBuilder:
         Allows a user to submit a component (text or description).
         Replaces previous submission if user submits again.
         """
+
+        if not isinstance(component, str):
+            return False
+        
         if not component or not component.strip():
             return False
         
