@@ -3,3 +3,24 @@
 2. Design your tests
    . How will you test various functionality?
     . This helps you to understand the system much better as you know the expected behavior. Why is that important? Because that expected behavior is what shpuld satisfy the requirements (and, customer)
+
+Check yourself
+Implementation Correctness: Does your code follow the specifications?
+Test Coverage: Do you test all the scenarios? Your test framework will give you a course response, based on percentage of the functions that have tests that have passed. That doesn't mean they are tested well. Your tests may be incomplete or too simple.
+Test Quality: Are tests well-named, isolated, and clearly asserting specific behaviors?
+Edge Case Handling: Do you identify and test tricky edge cases?
+Submission
+Submit:
+
+meme_builder.py - Your completed implementation
+test_meme_builder.py - Your comprehensive test suite
+README.md - Brief notes on your testing strategy and any interesting edge cases you discovered
+
+Recommendations
+Write tests as you implement - Don't wait until the end
+Test one thing at a time - Each test should verify one specific behavior
+Use descriptive test names - test_vote_for_own_submission_rejected is better than test_vote_1
+Think about boundaries - What happens at exactly 3 characters? Exactly 200?
+Consider the user's perspective - What mistakes might a meme creator make?
+Run your tests frequently - Make sure they pass (or fail when they should)
+Have fun with test data - Use actual meme-style text (realistic data) in your test cases!
