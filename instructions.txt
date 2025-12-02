@@ -1,0 +1,5 @@
+1. Creating unit tests for the most simple case. So you  experience how they are created and executed. We discussed some cases in quite detail. For you, the path us to do it. Without delay. This way you will shift from ' I never wrote any, don't know' to another state. ' I attempted'   ... result will be sucess or failure. Either is much better state. 
+
+2. Design your tests
+   . How will you test various functionality?
+    . This helps you to understand the system much better as you know the expected behavior. Why is that important? Because that expected behavior is what shpuld satisfy the requirements (and, customer)
