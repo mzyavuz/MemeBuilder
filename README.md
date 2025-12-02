@@ -1,12 +1,15 @@
 # What I have done & learn
 
 **1. I learned to navigate test creation with tool support**
+
 I utilized VSCode Autocomplete not just for speed, but as a learning aid. It helped me understand standard naming conventions for test functions and suggested potential edge cases I hadn't initially considered. This process turned "writing tests" into an interactive learning session where I discovered how to structure my code effectively.
 
 **2. I followed a "Start Simple, Then Scale" strategy**
+
 I started with the most basic validation tests, such as `test_submit_component_too_short` and `test_submit_empty_component_rejected`. Once I was confident these small units worked, I increased the complexity to cover full game workflows, eventually writing `test_complete_meme_three_rounds` to verify the entire system lifecycle.
 
 **3. I practiced Test-Driven Development (TDD)**
+
 I refined the application logic based on test failures. When my initial tests failed with `AttributeError` messages because the `MemeBuilder` class lacked necessary accessors, I reacted by implementing the missing or misnamed methods. Specifically:
 * I added `get_current_contributions()` when `test_submit_valid_component` failed.
 * I added `get_meme()` when `test_complete_meme_workflow` failed.
@@ -15,6 +18,7 @@ I refined the application logic based on test failures. When my initial tests fa
 FAILED test_meme_builder.py::TestMemeBuilder::test_complete_meme_workflow - AttributeError: 'MemeBuilder' object has no attribute 'get_meme'
 
 **4. I balanced required scenarios with creative data**
+
 Following my instructor's advice to be careful with test data, I ensured my tests were realistic. I used the specific scenario texts provided in the requirements but also enriched the test suite by creating my own meme content (e.g., "WHEN THE CODE WORKS", "STACKOVERFLOW") to ensure the system handled diverse text inputs correctly.
 
 
