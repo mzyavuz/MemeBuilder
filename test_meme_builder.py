@@ -59,22 +59,22 @@ class TestMemeBuilder:
         assert result is False
         
     def test_submit_component_with_leading_trailing_whitespace(self):
-    #     # "  FUNNY TEXT  " should work (trimmed)
+    #     # "  FUNNY TEXT  " should return True (trimmed)
         result = self.builder.submit_component("emre", "  FUNNY TEXT  ")
         assert result is True
 
     def test_submit_component_with_special_characters(self):
-    #     # "LOL!!! :D" should work
+    #     # "LOL!!! :D" should return True
         result = self.builder.submit_component("fatma", "LOL!!! :D")
         assert result is True
     
     def test_submit_component_with_numbers(self):
-    #     # "TOP 10 REASONS" should work
+    #     # "TOP 10 REASONS" should return True
         result = self.builder.submit_component("charlie", "TOP 10 REASONS")
         assert result is True
 
-    def test_submit_component_at_maximum_length(self):
-    #     # 200 characters should work
+    def test_submit_component_at_large_length(self):
+    #     # 200 characters should return True
         long_text = "HA" * 100
         result = self.builder.submit_component("bob", long_text)
         assert result is True
